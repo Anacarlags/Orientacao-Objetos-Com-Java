@@ -1,0 +1,75 @@
+Desafios em java 
+ 1 - Exibindo numeros pares:
+
+  import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) throws IOException {
+     int N;
+     
+     Scanner ler = new Scanner(System.in);
+     N = ler.nextInt();
+    
+    	for (int i = 1 ; i <= N  ; i++) {
+    		if (i % 2 == 0 ) System.out.println(i);
+    	}
+    }
+	
+}
+
+
+2 - Idade em dias 
+
+	import java.io.IOException;
+import java.util.Scanner;
+
+public class main {
+	
+    public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        int idadeDias = leitor.nextInt();
+        int  ANO = idadeDias/365;
+        int  MES = (idadeDias%365)/30;
+        int DIA = (idadeDias%365)%30;
+
+        System.out.println(ANO + " ano(s)");
+        System.out.println(MES + " mes(es)");
+        System.out.println( DIA + " dia(s)");
+    }
+	
+}
+
+3 - Notas da prova
+
+ import java.io.IOException;
+
+import java.util.Scanner;
+
+public class main{
+	
+    public static void main(String[] args) throws IOException {
+       Scanner ent = new Scanner(System.in);
+        int n = ent.nextInt();
+        
+        
+            // mostra a nota do aluno
+            if( n == 0){
+        System.out.println("E");
+      }
+      if( n > 0 && n < 36){
+        System.out.println("D");
+      }
+      if( n > 35 && n < 61){
+        System.out.println("C");
+      }
+      if( n > 60 && n < 86){
+        System.out.println("B");
+      }
+      if( n > 85 && n < 101){
+        System.out.println("A");
+    }
+
+    }
+	
+}
